@@ -6,13 +6,20 @@ const headerTemplate = `
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/nosotros/index.html">Nosotros</a></li>
-                <li><a href="pages/niveles/">Niveles</a></li>
-                <li><a href="pages/noticias/index.html">Noticias</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="pages/admision/index.html">Admisión</a></li>
-                <li><a href="pages/contacto/index.html">Contacto</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                <li>
+                    <a href="#" id="btn-niveles">Niveles</a>
+                    <ul id="submenu-niveles" style="display: none;">
+                        <li><a href="pages/niveles/inicial/inicial.html">Inicial</a></li>
+                        <li><a href="pages/niveles/primaria/primaria.html">Primaria</a></li>
+                        <li><a href="pages/niveles/secundaria/secundaria.html">Secundaria</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/noticias/noticias.html">Noticias</a></li>
+                <li><a href="pages/galeria/galeria.html">Galería</a></li>
+                <li><a href="pages/admision/admision.html">Admisión</a></li>
+                <li><a href="pages/contacto/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -50,3 +57,17 @@ const footerTemplate = `
 //Para que los HTML puedan reconocerlos
 document.getElementById('header-container').innerHTML = headerTemplate;
 document.getElementById('footer-container').innerHTML = footerTemplate;
+
+//Funcionamiento de "niveles"
+const btnNiveles = document.getElementById('btn-niveles');
+const submenuNiveles = document.getElementById('submenu-niveles');
+
+
+btnNiveles.addEventListener('click', function(evento) {
+    evento.preventDefault(); 
+    if (submenuNiveles.style.display === 'none') {
+        submenuNiveles.style.display = 'block';
+    } else {
+        submenuNiveles.style.display = 'none';
+    }
+});
