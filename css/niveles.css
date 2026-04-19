@@ -167,3 +167,58 @@
     font-size: 0.95rem;
     line-height: 1.5;
 }
+
+
+
+/*imagen*/
+
+/* Contenedor principal más estrecho para mayor compactación */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem; /* Reducimos el padding de 4rem a 2rem */
+    max-width: 1000px; /* Limitamos el ancho total de esta sección */
+    margin: 0 auto;
+}
+
+.hero-texto {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-texto h1 {
+    font-size: 2rem; /* Un poco más pequeño para que sea compacto */
+    margin-bottom: 1rem;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-imagen img {
+    /* Aquí está el secreto: limitamos el ancho y el alto */
+    max-width: 400px; 
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .hero-imagen img {
+        max-width: 280px; /* Aún más pequeño en celulares */
+    }
+}
