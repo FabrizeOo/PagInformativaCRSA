@@ -1,0 +1,169 @@
+/* ==========================================
+   ESTILOS GENERALES Y CONTENEDOR
+   ========================================== */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: #1a365d; /* Azul oscuro institucional */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion-seccion {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* ==========================================
+   SECCIÓN DE CURSOS (GRID)
+   ========================================== */
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-curso {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.tarjeta-curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #f6b323; /* Amarillo institucional */
+}
+
+.icono-curso {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-curso h3 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-curso p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   SECCIÓN DE HORARIO (TABLA)
+   ========================================== */
+.tabla-horario-wrapper {
+    overflow-x: auto; /* Para que sea responsiva en celulares */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.tabla-horario {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.tabla-horario th {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.tabla-horario td {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    color: #333;
+}
+
+.tabla-horario tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.actividad-comun {
+    background-color: #e0f2fe; /* Azul muy clarito */
+    font-weight: bold;
+    color: #0369a1;
+}
+
+.recreo {
+    background-color: #fef08a; /* Amarillo clarito */
+    font-weight: bold;
+    color: #854d0e;
+}
+/* Color temático para Primaria (podemos usar el azul institucional más fuerte) */
+.hero-primaria {
+    background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), 
+                url('../../../assets/images/banner-primaria.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+/* ==========================================
+   SECCIÓN DE SECUNDARIA Y CONVENIOS
+   ========================================== */
+.hero-secundaria {
+    background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), 
+                url('../../../assets/images/banner-secundaria.jpg'); /* Recuerda pedirle a tu equipo que suban esta imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.convenios-seccion {
+    background-color: #f8fafc;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    border: 1px solid #e2e8f0;
+}
+
+.grid-convenios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-convenio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #1a365d; /* Azul San Alfonso */
+}
+
+.icono-convenio {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-convenio h4 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tarjeta-convenio p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
