@@ -58,6 +58,27 @@ section > p {
 }
 
 /*Pilares*/
+
+.icono-pilar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.pilar-azul {
+    background-color: var(--primary-blue);
+}
+
+.pilar-dorado {
+    background-color: var(--accent-gold);
+}
+
 .contenedor-pilares {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
