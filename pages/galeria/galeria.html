@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Colegio San Alfonso</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+            <img src="../../assets/images/campus.png" alt="Logo San Alfonso" style="width: 50px; height: auto; border-radius: 5px;">
+            <span style="font-family: var(--font-heading); color: var(--primary-blue); font-size: 1.5rem; font-weight: bold;">Colegio San Alfonso</span>
+        </div>
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 30px;">
+                <li><a href="../../inicio.html" style="text-decoration: none; color: #333; font-weight: bold;">Inicio</a></li>
+                <li><a href="../nosotros/nosotros.html" style="text-decoration: none; color: #333; font-weight: bold;">Nosotros</a></li>
+                <li><a href="../niveles/primaria/primaria.html" style="text-decoration: none; color: #333; font-weight: bold;">Niveles</a></li>
+                <li><a href="../noticias/noticias.html" style="text-decoration: none; color: #333; font-weight: bold;">Noticias</a></li>
+                <li><a href="galeria.html" style="text-decoration: none; color: var(--primary-blue); font-weight: bold;">Galería</a></li>
+                <li><a href="../admision/admision.html" style="text-decoration: none; color: #333; font-weight: bold;">Admisión</a></li>
+                <li><a href="../contacto/contacto.html" style="text-decoration: none; color: #333; font-weight: bold;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="galeria">
+            <h2>Galería Institucional</h2>
+            <p>Un recorrido visual por nuestras actividades y modernas instalaciones.</p>
+            
+            <div class="grid-galeria">
+                <img src="../../assets/images/galeria1.png" alt="Actividad 1">
+                <img src="../../assets/images/galeria2.png" alt="Actividad 2">
+                <img src="../../assets/images/galeria3.png" alt="Actividad 3">
+                <img src="../../assets/images/noticiasCiencias.png" alt="Feria de Ciencias">
+                <img src="../../assets/images/noticiasDeporte.png" alt="Olimpiadas">
+                <img src="../../assets/images/noticiasGraduación.png" alt="Graduación">
+            </div>
+        </section>
+
+        <section id="testimonios">
+            <h2>Comunidad San Alfonso</h2>
+            <div class="contenedor-testimonios">
+                <article>
+                    <p>"Excelente ambiente para el aprendizaje de mis hijos. Los talleres son geniales."</p>
+                    <h4>Familia González</h4>
+                </article>
+                <article>
+                    <p>"Las instalaciones son de primer nivel, muy recomendados en la zona."</p>
+                    <h4>Familia Martínez</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+    
+    <script src="../../js/header-footer.js"></script>
+
+    <footer style="background-color: #0d2235; color: #fff; padding: 60px 5% 30px; font-family: sans-serif;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+        
+        <div class="footer-info">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <img src="../../assets/images/campus.png" alt="Logo San Alfonso" style="width: 50px; background: #fff; border-radius: 5px; padding: 5px;">
+                <div>
+                    <h3 style="margin: 0; font-size: 1.2rem;">Colegio San Alfonso</h3>
+                    <p style="margin: 0; font-size: 0.8rem; color: #A0B2C6;">30 años formando líderes</p>
+                </div>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: #A0B2C6;">Educación integral de calidad con valores sólidos y metodología innovadora.</p>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <a href="#" style="background: #2c3e50; color: #fff; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center; border-radius: 5px; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="background: #2c3e50; color: #fff; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center; border-radius: 5px; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="background: #2c3e50; color: #fff; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center; border-radius: 5px; text-decoration: none;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h4 style="color: #fff; margin-bottom: 20px; border-bottom: 2px solid #F39C12; display: inline-block;">Enlaces Rápidos</h4>
+            <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+                <li style="margin-bottom: 10px;"><a href="../nosotros/nosotros.html" style="color: #A0B2C6; text-decoration: none;">Nosotros</a></li>
+                <li style="margin-bottom: 10px;"><a href="../niveles/primaria/primaria.html" style="color: #A0B2C6; text-decoration: none;">Niveles Educativos</a></li>
+                <li style="margin-bottom: 10px;"><a href="../noticias/noticias.html" style="color: #A0B2C6; text-decoration: none;">Noticias</a></li>
+                <li style="margin-bottom: 10px;"><a href="../contacto/contacto.html" style="color: #A0B2C6; text-decoration: none;">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 style="color: #fff; margin-bottom: 20px; border-bottom: 2px solid #F39C12; display: inline-block;">Contacto</h4>
+            <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: #A0B2C6;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: #F39C12; margin-right: 10px;"></i> Av. San Alfonso 123, Lima, Perú</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-phone" style="color: #F39C12; margin-right: 10px;"></i> (01) 234-5678</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color: #F39C12; margin-right: 10px;"></i> info@sanalfonso.edu.pe</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 style="color: #fff; margin-bottom: 20px; border-bottom: 2px solid #F39C12; display: inline-block;">Horario de Atención</h4>
+            <p style="font-size: 0.9rem; color: #A0B2C6;">Lunes - Viernes: 7:30 AM - 4:00 PM</p>
+        </div>
+    </div>
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.8rem; color: #666;">
+        &copy; 2026 Colegio San Alfonso - Todos los derechos reservados.
+    </div>
+</footer>
+</body>
+</html>
