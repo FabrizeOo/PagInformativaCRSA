@@ -1,26 +1,35 @@
+// Detectar si estamos en una subcarpeta y generar rutas correctas
+function getAssetPath(path) {
+    return window.location.pathname.includes('/pages/') ? '../../' + path : path;
+}
+
+function getLinkPath(path) {
+    return window.location.pathname.includes('/pages/') ? '../../' + path : path;
+}
+
 //Header:
 const headerTemplate = `
     <header>
         <div class="logo-container">
-            <img src="assets/images/logo.png" alt="Logo San Alfonso" class="logo-header">
+            <img src="${getAssetPath('assets/images/logo.png')}" alt="Logo San Alfonso" class="logo-header">
             <strong>Colegio San Alfonso</strong>
         </div>
         <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="${getLinkPath('inicio.html')}">Inicio</a></li>
+                <li><a href="${getLinkPath('pages/nosotros/nosotros.html')}">Nosotros</a></li>
                 <li>
                     <a href="#" id="btn-niveles">Niveles</a>
                     <ul id="submenu-niveles" style="display: none;">
-                        <li><a href="pages/niveles/inicial/inicial.html">Inicial</a></li>
-                        <li><a href="pages/niveles/primaria/primaria.html">Primaria</a></li>
-                        <li><a href="pages/niveles/secundaria/secundaria.html">Secundaria</a></li>
+                        <li><a href="${getLinkPath('pages/niveles/inicial/inicial.html')}">Inicial</a></li>
+                        <li><a href="${getLinkPath('pages/niveles/primaria/primaria.html')}">Primaria</a></li>
+                        <li><a href="${getLinkPath('pages/niveles/secundaria/secundaria.html')}">Secundaria</a></li>
                     </ul>
                 </li>
-                <li><a href="pages/noticias/noticias.html">Noticias</a></li>
-                <li><a href="pages/galeria/galeria.html">Galería</a></li>
-                <li><a href="pages/admision/admision.html">Admisión</a></li>
-                <li><a href="pages/contacto/contacto.html">Contacto</a></li>
+                <li><a href="${getLinkPath('pages/noticias/noticias.html')}">Noticias</a></li>
+                <li><a href="${getLinkPath('pages/galeria/galeria.html')}">Galería</a></li>
+                <li><a href="${getLinkPath('pages/admision/admision.html')}">Admisión</a></li>
+                <li><a href="${getLinkPath('pages/contacto/contacto.html')}">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +41,7 @@ const footerTemplate = `
         <div class="footer-info-principal">
             
             <div class="footer-brand">
-                <img src="assets/images/logo.png" alt="Logo San Alfonso" class="logo-footer">
+                <img src="${getAssetPath('assets/images/logo.png')}" alt="Logo San Alfonso" class="logo-footer">
                 <div class="footer-titulos">
                     <strong>Colegio San Alfonso</strong>
                     <span>30 años formando líderes</span>
@@ -52,10 +61,10 @@ const footerTemplate = `
         <div>
             <h3>Enlaces Rápidos</h3>
             <ul>
-                <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="${getLinkPath('pages/nosotros/nosotros.html')}">Nosotros</a></li>
                 <li><a href="#niveles">Niveles Educativos</a></li>
-                <li><a href="pages/noticias/noticias.html">Noticias</a></li>
-                <li><a href="pages/contacto/contacto.html">Contacto</a></li>
+                <li><a href="${getLinkPath('pages/noticias/noticias.html')}">Noticias</a></li>
+                <li><a href="${getLinkPath('pages/contacto/contacto.html')}">Contacto</a></li>
             </ul>
         </div>
         
