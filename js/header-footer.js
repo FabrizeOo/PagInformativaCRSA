@@ -8,17 +8,17 @@ const headerTemplate = `
         <nav>
             <ul>
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li>
                     <a href="#" id="btn-niveles">Niveles</a>
                     <ul id="submenu-niveles" style="display: none;">
-                        <li><a href="#niveles">Inicial</a></li>
-                        <li><a href="#niveles">Primaria</a></li>
-                        <li><a href="#niveles">Secundaria</a></li>
+                        <li><a href="#inicial">Inicial</a></li>
+                        <li><a href="#primaria">Primaria</a></li>
+                        <li><a href="#secundaria">Secundaria</a></li>
                     </ul>
                 </li>
-                <li><a href="pages/noticias/noticias.html">Noticias</a></li>
-                <li><a href="pages/galeria/galeria.html">Galería</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#admision">Admisión</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -52,9 +52,9 @@ const footerTemplate = `
         <div>
             <h3>Enlaces Rápidos</h3>
             <ul>
-                <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#niveles">Niveles Educativos</a></li>
-                <li><a href="pages/noticias/noticias.html">Noticias</a></li>
+                <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
