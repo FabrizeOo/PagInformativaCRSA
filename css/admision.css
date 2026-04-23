@@ -24,6 +24,7 @@
     background: white;
     padding: 40px 20px;
     border-radius: 15px;
+    color: var(--text-dark);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     transition: transform 0.3s;
     position: relative;
