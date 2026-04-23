@@ -7,20 +7,20 @@ const headerTemplate = `
         </div>
         <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="#home">Inicio</a></li>
                 <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
                 <li>
                     <a href="#" id="btn-niveles">Niveles</a>
                     <ul id="submenu-niveles" style="display: none;">
-                        <li><a href="pages/niveles/inicial/inicial.html">Inicial</a></li>
-                        <li><a href="pages/niveles/primaria/primaria.html">Primaria</a></li>
-                        <li><a href="pages/niveles/secundaria/secundaria.html">Secundaria</a></li>
+                        <li><a href="#niveles">Inicial</a></li>
+                        <li><a href="#niveles">Primaria</a></li>
+                        <li><a href="#niveles">Secundaria</a></li>
                     </ul>
                 </li>
                 <li><a href="pages/noticias/noticias.html">Noticias</a></li>
                 <li><a href="pages/galeria/galeria.html">Galería</a></li>
-                <li><a href="pages/admision/admision.html">Admisión</a></li>
-                <li><a href="pages/contacto/contacto.html">Contacto</a></li>
+                <li><a href="#admision">Admisión</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +28,7 @@ const headerTemplate = `
 
 //Footer:
 const footerTemplate = `
-    <footer id="contacto">
+    <footer>
         <div class="footer-info-principal">
             
             <div class="footer-brand">
@@ -55,7 +55,7 @@ const footerTemplate = `
                 <li><a href="pages/nosotros/nosotros.html">Nosotros</a></li>
                 <li><a href="#niveles">Niveles Educativos</a></li>
                 <li><a href="pages/noticias/noticias.html">Noticias</a></li>
-                <li><a href="pages/contacto/contacto.html">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
         

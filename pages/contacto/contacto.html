@@ -1,0 +1,87 @@
+<div id="contacto">
+<link rel="stylesheet" href="css/contacto.css">
+
+<section class="contacto-hero">
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para escucharte y resolver todas tus dudas.</p>
+</section>
+
+<section id="contacto-cuerpo">
+    <div class="contacto-grid">
+        <div class="contacto-info">
+            <h2>Información Institucional</h2>
+            <p>Puedes visitarnos en nuestra sede central o comunicarte a través de nuestros canales oficiales.</p>
+            
+            <div class="info-items">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Av. San Alfonso 123, Lima, Perú</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Teléfonos</h3>
+                        <p>(01) 234-5678 / 987 654 321</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Correo Electrónico</h3>
+                        <p>info@sanalfonso.edu.pe</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 7:30 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mapa-mockup">
+                <!-- Mockup de mapa -->
+                <div class="placeholder-map">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Mapa Interactivo (Cargando...)</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contacto-formulario">
+            <div class="form-container">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contact-form" class="premium-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_contacto">Correo Electrónico</label>
+                        <input type="email" id="email_contacto" name="email_contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="informacion">Información General</option>
+                            <option value="admision">Admisión</option>
+                            <option value="pagos">Pagos y Pensiones</option>
+                            <option value="sugerencias">Sugerencias</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje_contacto">Mensaje</label>
+                        <textarea id="mensaje_contacto" name="mensaje_contacto" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
